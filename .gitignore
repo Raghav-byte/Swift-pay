@@ -1,0 +1,13 @@
+### Environment ###
+.env
+
+### Load test output ###
+load-test/results/*.json
+load-test/results/*.pcap
+load-test/results/*.pcapng
+!load-test/results/RPS10.pcapng
+RPS10.zip
+
+### IDE ###
+.cursor
+.idea

@@ -1,0 +1,63 @@
+server:
+  port: ${SERVER_PORT:8080}
+  tomcat:
+    threads:
+      max: ${TOMCAT_MAX_THREADS:200}
+
+spring:
+  config:
+    import:
+      - optional:file:../.env[.properties]
+      - optional:file:.env[.properties]
+  application:
+    name: payment-gateway
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: ${HIKARI_MAX_POOL_SIZE:30}
+      minimum-idle: ${HIKARI_MIN_IDLE:5}
+      connection-timeout: ${HIKARI_CONNECTION_TIMEOUT:30000}
+      keepalive-time: ${HIKARI_KEEPALIVE_TIME:30000}
+      max-lifetime: ${HIKARI_MAX_LIFETIME:1800000}
+      # Supabase transaction pooler (:6543) + PgBouncer: disable server-side prepared statements
+      data-source-properties:
+        prepareThreshold: 0
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: false
+        jdbc:
+          use_server_prepared_stmts: false
+  data:
+    redis:
+      host: ${REDIS_HOST:localhost}
+      port: ${REDIS_PORT:6379}
+  kafka:
+    bootstrap-servers: ${KAFKA_BOOTSTRAP:localhost:9092}
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      # acks=1 + no idempotence = lower latency on 202 path; use KAFKA_PRODUCER_ACKS=all for max durability
+      acks: ${KAFKA_PRODUCER_ACKS:1}
+      retries: 3
+      properties:
+        enable.idempotence: ${KAFKA_PRODUCER_IDEMPOTENCE:false}
+        linger.ms: 5
+        batch.size: 16384
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+
+logging:
+  level:
+    com.swiftpay.gateway: INFO
+    org.springframework.kafka: WARN

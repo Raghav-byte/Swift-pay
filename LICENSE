@@ -1,0 +1,63 @@
+SwiftPay Non-Commercial License
+Copyright (c) 2026 Raghav. All Rights Reserved.
+
+================================================================================
+
+IMPORTANT — READ BEFORE USING THIS SOFTWARE
+
+This repository is shared for portfolio review, hackathon demonstration, and
+non-commercial learning only. It is NOT open source for commercial reuse.
+
+--------------------------------------------------------------------------------
+1. GRANT OF LIMITED PERMISSION
+
+You may view, clone, and fork this repository only for:
+
+  (a) Evaluating the author's skills (e.g. recruitment, technical interviews);
+  (b) Personal, non-commercial study or academic reference; or
+  (c) Running the software locally to verify behavior described in the README.
+
+No other rights are granted by this license.
+
+--------------------------------------------------------------------------------
+2. PROHIBITED USES (WITHOUT PRIOR WRITTEN CONSENT)
+
+You may NOT, directly or indirectly:
+
+  (a) Use any part of this software in a commercial product, service, or
+      internal tool that generates revenue or supports a for-profit business;
+  (b) Copy, modify, merge, publish, distribute, sublicense, or sell copies of
+      this software or derivative works;
+  (c) Incorporate this code into an employer's, client's, or your own
+      proprietary codebase for production or profit;
+  (d) Remove or alter copyright notices or this license;
+  (e) Present this work as your own original work.
+
+Recruiters, hiring managers, and reviewers may read and discuss this project
+for hiring decisions. That does not grant permission to reuse the code in any
+company product, demo sold to customers, or paid offering.
+
+--------------------------------------------------------------------------------
+3. OWNERSHIP
+
+All source code, documentation, architecture diagrams, and related materials
+in this repository remain the exclusive property of the copyright holder.
+
+--------------------------------------------------------------------------------
+4. NO WARRANTY
+
+THIS SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. IN NO EVENT SHALL THE COPYRIGHT
+HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM USE
+OF THIS SOFTWARE.
+
+--------------------------------------------------------------------------------
+5. CONTACT
+
+For commercial licensing or other permissions, contact the repository owner via
+GitHub: https://github.com/Raghav-byte/Swift-pay
+
+================================================================================
+
+By accessing, cloning, or using this repository, you agree to these terms.

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 260" font-family="system-ui,Segoe UI,sans-serif">
+  <rect width="480" height="260" fill="#f8fafc"/>
+  <text x="240" y="28" text-anchor="middle" font-size="14" font-weight="600" fill="#0f172a">Gateway p95  same 250 RPS target</text>
+  <line x1="60" y1="200" x2="420" y2="200" stroke="#94a3b8"/>
+  <line x1="60" y1="50" x2="60" y2="200" stroke="#94a3b8"/>
+  <text x="48" y="55" text-anchor="end" font-size="10" fill="#64748b">1800ms</text>
+  <text x="48" y="125" text-anchor="end" font-size="10" fill="#64748b">900ms</text>
+  <text x="48" y="200" text-anchor="end" font-size="10" fill="#64748b">0</text>
+  <rect x="120" y="62" width="100" height="138" fill="#fca5a5" stroke="#dc2626"/>
+  <text x="170" y="115" text-anchor="middle" font-size="13" font-weight="600" fill="#7f1d1d">~1750 ms</text>
+  <text x="170" y="220" text-anchor="middle" font-size="11" fill="#334155">Before</text>
+  <text x="170" y="235" text-anchor="middle" font-size="9" fill="#64748b">946k req � 1 partition</text>
+  <rect x="280" y="183" width="100" height="17" fill="#86efac" stroke="#16a34a"/>
+  <text x="330" y="175" text-anchor="middle" font-size="13" font-weight="600" fill="#14532d">~111 ms</text>
+  <text x="330" y="220" text-anchor="middle" font-size="11" fill="#334155">After</text>
+  <text x="330" y="235" text-anchor="middle" font-size="9" fill="#64748b">999k req � 6 partitions</text>
+</svg>

@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: payment-gateway
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: payment-gateway
+  template:
+    metadata:
+      labels:
+        app: payment-gateway
+    spec:
+      containers:
+        - name: payment-gateway
+          image: swiftpay/payment-gateway:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080
+          envFrom:
+            - configMapRef:
+                name: swiftpay-config
+            - secretRef:
+                name: swiftpay-secrets
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: payment-gateway
+spec:
+  selector:
+    app: payment-gateway
+  ports:
+    - port: 8080
+      targetPort: 8080

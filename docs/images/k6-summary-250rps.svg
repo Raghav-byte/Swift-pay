@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 300" font-family="Consolas,Menlo,monospace">
+  <rect width="520" height="300" rx="8" fill="#1e293b"/>
+  <text x="20" y="28" font-size="13" fill="#94a3b8">k6  payment-load-test.js (250 RPS target)</text>
+  <text x="20" y="52" font-size="12" fill="#e2e8f0">     http_reqs................: 999809  250.0/s</text>
+  <text x="20" y="72" font-size="12" fill="#e2e8f0">     http_req_failed..........: 0.01%</text>
+  <text x="20" y="92" font-size="12" fill="#86efac">      status is 202</text>
+  <text x="20" y="120" font-size="12" fill="#cbd5e1">     http_req_duration........: avg=58ms  min=12ms med=56ms max=6.2s</text>
+  <text x="20" y="140" font-size="12" fill="#fde047">       p(90)=77ms  p(95)=111ms  p(99)=...</text>
+  <text x="20" y="168" font-size="12" fill="#cbd5e1">     dropped_iterations.......: 191</text>
+  <text x="20" y="188" font-size="12" fill="#cbd5e1">     iteration_duration.......: avg=...</text>
+  <text x="20" y="220" font-size="12" fill="#86efac">      http_req_failed &lt; 1%</text>
+  <text x="20" y="240" font-size="12" fill="#86efac">      p(95) &lt; 500ms</text>
+  <text x="20" y="275" font-size="10" fill="#64748b">Source: docs/PERFORMANCE.md  latest full run (2026-05-25)</text>
+</svg>

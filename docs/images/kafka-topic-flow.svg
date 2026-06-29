@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 220" font-family="system-ui,Segoe UI,sans-serif">
+  <rect width="600" height="220" fill="#faf5ff"/>
+  <text x="300" y="26" text-anchor="middle" font-size="14" font-weight="600" fill="#4c1d95">Kafka topics (6 partitions on payment-initiated)</text>
+  <rect x="20" y="70" width="100" height="50" rx="6" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="70" y="100" text-anchor="middle" font-size="11">gateway</text>
+  <rect x="150" y="60" width="130" height="36" rx="4" fill="#fef3c7" stroke="#d97706"/>
+  <text x="215" y="83" text-anchor="middle" font-size="10">payment-initiated</text>
+  <rect x="150" y="110" width="130" height="36" rx="4" fill="#fee2e2" stroke="#dc2626"/>
+  <text x="215" y="133" text-anchor="middle" font-size="10">payment-failed-dlq</text>
+  <rect x="320" y="70" width="100" height="50" rx="6" fill="#ede9fe" stroke="#7c3aed"/>
+  <text x="370" y="100" text-anchor="middle" font-size="11">ledger</text>
+  <rect x="450" y="55" width="130" height="36" rx="4" fill="#d1fae5" stroke="#059669"/>
+  <text x="515" y="78" text-anchor="middle" font-size="10">payment-completed</text>
+  <rect x="450" y="105" width="130" height="36" rx="4" fill="#fce7f3" stroke="#db2777"/>
+  <text x="515" y="128" text-anchor="middle" font-size="10">analytics :8082</text>
+  <line x1="120" y1="95" x2="148" y2="78" stroke="#64748b" marker-end="url(#a)"/>
+  <line x1="280" y1="78" x2="318" y2="95" stroke="#64748b" marker-end="url(#a)"/>
+  <line x1="420" y1="95" x2="448" y2="73" stroke="#64748b" marker-end="url(#a)"/>
+  <line x1="515" y1="91" x2="515" y2="103" stroke="#64748b" marker-end="url(#a)"/>
+  <defs><marker id="a" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L5,3 L0,6" fill="#64748b"/></marker></defs>
+  <text x="300" y="195" text-anchor="middle" font-size="10" fill="#6b7280">Business failure � payment-failed (ack) � Infra failure � retry � DLQ</text>
+</svg>
